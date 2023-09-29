@@ -25,11 +25,17 @@
             font-size: 700;
             color: red;
         }
-        li:nth-child(2n+1){
+        p>:nth-child(2n+1){
             background-color: aqua;
         }
         a:visited{
             color:black;
+        }
+        body{
+            counter-reset: section;
+        }
+        p::before{
+            content:"❤️" ;
         }
     </style>
 </head>
@@ -48,14 +54,16 @@
     <a href="http://192.168.1.1/Main_Login.asp">asus login</a>
     <br>
     <a href="https://www.facebook.com/">visit my fb accoutn</a>
-    <ul>
-        <li>Alia</li>
-        <li>Malia</li>
-        <Li>salia</Li>
-        <li>Jalia</li>
-        <li>Maria</li>
-        <li>sadia</li>
-    </ul>
+    <ol>
+        <p>Apa</p>
+        <p>Mapa</p>
+        <p>sapa</p>
+        <p>Japa</p>
+        <p>Maria</p>
+        <p>sadia</p>
+    </ol>
+        
+    
 
 </body>
 </html>
